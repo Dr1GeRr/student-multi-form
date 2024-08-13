@@ -1,0 +1,36 @@
+<h2>Contact Details</h2>
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="text" id="phoneNumber" [(ngModel)]="contactDetails.phoneNumber" name="phoneNumber" required>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="contactDetails.email" name="email" required>
+  </div>
+  <div>
+    <label for="homeAddress1">Home Address 1:</label>
+    <input type="text" id="homeAddress1" [(ngModel)]="contactDetails.homeAddress1" name="homeAddress1" required>
+  </div>
+  <div>
+    <label for="homeAddress2">Home Address 2:</label>
+    <input type="text" id="homeAddress2" [(ngModel)]="contactDetails.homeAddress2" name="homeAddress2">
+  </div>
+  <div>
+    <label for="city">City:</label>
+    <input type="text" id="city" [(ngModel)]="contactDetails.city" name="city" required>
+  </div>
+  <div>
+    <label for="state">State:</label>
+    <input type="text" id="state" [(ngModel)]="contactDetails.state" name="state" required>
+  </div>
+  <div>
+    <label for="country">Country:</label>
+    <input type="text" id="country" [(ngModel)]="contactDetails.country" name="country" required>
+  </div>
+  <div>
+    <label for="zipcode">Zipcode:</label>
+    <input type="text" id="zipcode" [(ngModel)]="contactDetails.zipcode" name="zipcode" required>
+  </div>
+  <button type="submit">Next</button>
+</form>

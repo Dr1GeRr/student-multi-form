@@ -1,0 +1,24 @@
+<h2>Personal Details</h2>
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="hobby">Hobby:</label>
+    <input type="text" id="hobby" [(ngModel)]="personalDetails.hobby" name="hobby" required>
+  </div>
+  <div>
+    <label for="occupation">Occupation:</label>
+    <input type="text" id="occupation" [(ngModel)]="personalDetails.occupation" name="occupation" required>
+  </div>
+  <div>
+    <label for="placesVisited">Places Visited:</label>
+    <input type="text" id="placesVisited" [(ngModel)]="personalDetails.placesVisited" name="placesVisited" required>
+  </div>
+  <div>
+    <label for="favoriteArtist">Favorite Artist:</label>
+    <input type="text" id="favoriteArtist" [(ngModel)]="personalDetails.favoriteArtist" name="favoriteArtist" required>
+  </div>
+  <div>
+    <label for="favoriteMusician">Favorite Musician:</label>
+    <input type="text" id="favoriteMusician" [(ngModel)]="personalDetails.favoriteMusician" name="favoriteMusician" required>
+  </div>
+  <button type="submit">Submit</button>
+</form>
